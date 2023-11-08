@@ -1,0 +1,264 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222; /* Dark background similar to MrBeast website */
+    color: #fff; /* Text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #ff4f4f; /* Red header similar to MrBeast website */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #cc3f3f; /* Darker red border */
+    animation: slideInDown 1s;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite; /* MrBeast-like pulse animation */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.header p {
+    font-size: 18px;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Main Content Styles */
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.course-card {
+    background-color: #fff;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.course-card p {
+    color: #666;
+    margin: 10px 0;
+    animation: fadeIn 2s;
+}
+
+.course-card a {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.course-card a:hover {
+    background-color: #ff914d;
+    transform: scale(1.05); /* Additional scale on hover */
+}
+
+/* Testimonials Section Styles */
+.testimonial-card {
+    background-color: #fff;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    animation: fadeIn 1s;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.testimonial-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card p {
+    color: #666;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold; /* Added font-weight for testimonials */
+    animation: pulse 2s infinite; /* MrBeast-like pulse animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Newsletter Signup Section Styles */
+.newsletter-section {
+    background-color: #ff4f4f; /* Red similar to header */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.newsletter-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.newsletter-section p {
+    color: #fff; /* Text color */
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-input {
+    padding: 12px;
+    border: 1px solid #ff5733; /* Red border */
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.newsletter-button {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 18px;
+}
+
+.newsletter-button:hover {
+    background-color: #ff914d;
+    transform: scale(1.05); /* Additional scale on hover */
+}
+
+/* Footer Section Styles */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
